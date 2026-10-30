@@ -3,8 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Muhammed Sabir C. — AI-assisted full-stack developer portfolio.">
   <title>Muhammed Sabir C. | Full-Stack Developer</title>
+  <meta name="description" content="Muhammed Sabir C. — AI-assisted full-stack developer portfolio. Projects in Next.js, React, Supabase, and Firebase.">
+  <meta name="author" content="Muhammed Sabir C.">
+  <link rel="canonical" href="https://muhammed-sabir-portfolio.vercel.app/">
+  
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://muhammed-sabir-portfolio.vercel.app/">
+  <meta property="og:title" content="Muhammed Sabir C. | Full-Stack Developer">
+  <meta property="og:description" content="AI-assisted full-stack developer portfolio. Projects in Next.js, React, Supabase, and Firebase.">
+  <meta property="og:image" content="assets/logo-full.png">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://muhammed-sabir-portfolio.vercel.app/">
+  <meta name="twitter:title" content="Muhammed Sabir C. | Full-Stack Developer">
+  <meta name="twitter:description" content="AI-assisted full-stack developer portfolio. Projects in Next.js, React, Supabase, and Firebase.">
+  <meta name="twitter:image" content="assets/logo-full.png">
+
   <link rel="icon" href="assets/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/favicon-180.png">
@@ -14,7 +31,7 @@
 <body>
   <div class="scanline" aria-hidden="true"></div>
   <header class="topbar">
-    <a class="brand" href="#home"><img src="assets/logo-mark.png" alt="" width="49" height="38"><span><span class="prompt">~/</span> sabir.dev</span></a>
+    <a class="brand" href="#home"><img src="assets/logo-mark.png" alt="Falcon-Exe logo" width="49" height="38"><span><span class="prompt">~/</span> sabir.dev</span></a>
     <nav aria-label="Primary">
       <a href="#about">about</a><a href="#projects">projects</a><a href="#stack">stack</a><a href="#contact">contact</a>
     </nav>
@@ -30,7 +47,9 @@
         <p class="intro">Computer Science student building practical web applications with modern JavaScript technologies and AI-assisted development workflows.</p>
         <div class="hero-actions">
           <a class="button primary" href="#projects">View projects <span>↘</span></a>
+          <a class="button secondary" href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume / CV ↗</a>
           <a class="button secondary" href="https://github.com/Falcon-Exe" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/muhammed-sabir-c-b94456397/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
         </div>
         <div class="meta-line"><span>LOCATION</span> India · Remote</div>
       </div>
@@ -41,9 +60,9 @@
   role: <span class="green">"Full-Stack Developer"</span>,
   approach: <span class="green">"AI-assisted"</span>,
   learning: [
-    <span class="yellow">"React"</span>,
-    <span class="yellow">"Next.js"</span>,
-    <span class="yellow">"REST APIs"</span>
+    <span class="yellow">"TypeScript"</span>,
+    <span class="yellow">"Shopify / Commerce"</span>,
+    <span class="yellow">"Production Caching"</span>
   ],
   mindset: <span class="green">"build, test, improve"</span>
 };</code></pre>
@@ -60,6 +79,8 @@
         <div class="info-panel">
           <div><span>EDUCATION</span><strong>BSc Computer Science (Honours)</strong><small>Majlis Arts and Science College · University of Calicut</small></div>
           <div><span>GITHUB</span><strong><a href="https://github.com/Falcon-Exe" target="_blank" rel="noreferrer">github.com/Falcon-Exe ↗</a></strong></div>
+          <div><span>LINKEDIN</span><strong><a href="https://www.linkedin.com/in/muhammed-sabir-c-b94456397/" target="_blank" rel="noreferrer">linkedin.com/in/muhammed-sabir-c ↗</a></strong></div>
+          <div><span>RESUME</span><strong><a href="assets/resume.pdf" target="_blank" rel="noreferrer">Download Resume PDF ↗</a></strong></div>
         </div>
       </div>
     </section>
@@ -72,21 +93,56 @@
           <h3>WafyFest — Event Management Dashboard</h3>
           <p>A multi-college arts and sports fest management platform currently under development, covering student and college workflows, event administration, result entry and stage operations.</p>
           <ul><li>Worked on role-oriented dashboards and authentication-related flows.</li><li>Project architecture includes registrations, event entries, results and points tracking.</li><li>Developed with an AI-assisted workflow; integration, debugging and verification remain part of the work.</li></ul>
-          <div class="project-foot"><span>STACK: Next.js · Supabase · JavaScript · Vercel</span><a href="https://github.com/wafyfest/dashboard" target="_blank" rel="noreferrer">Repository ↗</a></div>
+          <div class="project-foot">
+            <span>STACK: Next.js · Supabase · JavaScript · Vercel</span>
+            <span class="links"><a href="https://github.com/wafyfest/dashboard" target="_blank" rel="noreferrer">Repository ↗</a></span>
+          </div>
         </article>
+        
         <article class="project">
           <div class="project-top"><span class="project-index">PROJECT_02</span><span class="tag">React · Firebase</span></div>
           <h3>HAMARTIA 2026 — Arts Fest App</h3>
           <p>An arts-festival management web application designed around team-lead/admin workflows and live data updates.</p>
+          
+          <a class="project-media" href="https://artsfestapp.web.app/" target="_blank" rel="noreferrer" title="Open HAMARTIA 2026 Live App">
+            <div class="media-bar">
+              <span class="dots" aria-hidden="true"><b></b><b></b><b></b></span>
+              <span>hamartia-admin.view</span>
+              <span class="view-hint">open live ↗</span>
+            </div>
+            <img src="assets/project-hamartia.png" alt="HAMARTIA 2026 Admin Dashboard interface showing events, results, and live standings" loading="lazy">
+          </a>
+          
           <ul><li>React and Vite frontend with Firebase Authentication and Firestore.</li><li>Worked with event categories, schedules, results and CSV-oriented data workflows.</li><li>Hosted on Firebase Hosting.</li></ul>
-          <div class="project-foot"><span>STACK: React · Vite · Firebase · Firestore</span><span class="links"><a href="https://artsfestapp.web.app/" target="_blank" rel="noreferrer">Live project ↗</a></span></div>
+          <div class="project-foot">
+            <span>STACK: React · Vite · Firebase · Firestore</span>
+            <span class="links">
+              <a href="https://artsfestapp.web.app/" target="_blank" rel="noreferrer">Live project ↗</a>
+            </span>
+          </div>
         </article>
+
         <article class="project">
           <div class="project-top"><span class="project-index">PROJECT_03</span><span class="tag">React · Vite</span></div>
           <h3>MUSF — Organization Web Platform</h3>
           <p>A responsive web platform for an organization, using a defined visual identity and a component-based frontend.</p>
+          
+          <a class="project-media" href="https://musf.vercel.app/" target="_blank" rel="noreferrer" title="Open MUSF Organization Platform">
+            <div class="media-bar">
+              <span class="dots" aria-hidden="true"><b></b><b></b><b></b></span>
+              <span>musf-platform.view</span>
+              <span class="view-hint">open live ↗</span>
+            </div>
+            <img src="assets/project-musf.png" alt="Majlis Umariyya Students Federation organization web platform" loading="lazy">
+          </a>
+          
           <ul><li>React and Vite application with custom CSS styling.</li><li>Focused on responsive presentation, consistent branding and clear navigation.</li><li>Built through iterative AI-assisted development and manual review.</li></ul>
-          <div class="project-foot"><span>STACK: React · Vite · Vanilla CSS</span><span class="links"><a href="https://musf.web.app/" target="_blank" rel="noreferrer">Live project ↗</a></span></div>
+          <div class="project-foot">
+            <span>STACK: React · Vite · Vanilla CSS</span>
+            <span class="links">
+              <a href="https://musf.vercel.app/" target="_blank" rel="noreferrer">Live project ↗</a>
+            </span>
+          </div>
         </article>
       </div>
     </section>
@@ -117,9 +173,13 @@
       <div class="section-heading"><span>05</span><h2>Contact</h2><em>/* let's talk */</em></div>
       <p class="large">Interested in contributing to real products, learning from code reviews and growing through practical engineering work.</p>
       <div class="contact-row">
-        <a href="mailto:muhsabir.c@gmail.com">muhsabir.c@gmail.com</a>
+        <div class="contact-item">
+          <a href="mailto:muhsabir.c@gmail.com" id="contact-email">muhsabir.c@gmail.com</a>
+          <button type="button" class="copy-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy email address">copy</button>
+        </div>
         <a href="tel:+918943539446">+91 89435 39446</a>
         <a href="https://github.com/Falcon-Exe" target="_blank" rel="noreferrer">GitHub: Falcon-Exe ↗</a>
+        <a href="https://www.linkedin.com/in/muhammed-sabir-c-b94456397/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
         <span>India · Remote</span>
       </div>
     </section>
