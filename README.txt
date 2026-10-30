@@ -4,6 +4,7 @@ Files:
 - index.html: portfolio page
 - style.css: responsive terminal-inspired styling
 - script.js: small client-side enhancement
+- assets/: logo files and favicons
 
 Preview:
 Open index.html in a browser. No build step is required.
