@@ -38,34 +38,30 @@ if (copyEmailBtn && contactEmail) {
   });
 }
 
-// Active navigation scroll-spy
+// Active navigation scroll-spy using getBoundingClientRect
 const sections = document.querySelectorAll('main section[id]');
 const navLinks = document.querySelectorAll('nav a[href^="#"]');
 
 function updateActiveNav() {
-  const scrollPosition = window.scrollY + 120;
-
+  let currentSectionId = '';
+  
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.offsetHeight;
-    const sectionId = section.getAttribute('id');
-
-    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-      navLinks.forEach((link) => {
-        if (link.getAttribute('href') === `#${sectionId}`) {
-          link.classList.add('active');
-        } else {
-          link.classList.remove('active');
-        }
-      });
+    const rect = section.getBoundingClientRect();
+    // If top of section is within top 200px of viewport and bottom is still below 100px
+    if (rect.top <= 200 && rect.bottom >= 100) {
+      currentSectionId = section.getAttribute('id');
     }
   });
 
-  // Clear or set when at the very top
-  if (window.scrollY < 200) {
-    navLinks.forEach((link) => link.classList.remove('active'));
-  }
+  navLinks.forEach((link) => {
+    if (currentSectionId && link.getAttribute('href') === `#${currentSectionId}`) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
 }
 
 window.addEventListener('scroll', updateActiveNav, { passive: true });
+window.addEventListener('resize', updateActiveNav, { passive: true });
 updateActiveNav();
